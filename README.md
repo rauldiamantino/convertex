@@ -1,7 +1,7 @@
 # convertex
 Conversão de textos e calculadora de IMC.
 
-Para acessar o projeto <a href="https://rauldiamantino.github.io/convertex/">Clique Aqui</a>
+Para acessar o projeto <a href="https://rauldiamantino.github.io/convertext/">Clique Aqui</a>
 
 # Preview
 
