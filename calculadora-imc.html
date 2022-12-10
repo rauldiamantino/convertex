@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Convertext</title>
+</head>
+
+<body class="font-light bg-gray-100">
+    <header class="bg-neutral-900 w-full sticky top-0">
+        <p class="text-white text-center p-2 text-sm md:text-base">Ferramentas gratuitas para conversões de textos, calculadoras, e muito mais... Aproveite e compartilhe!</p>
+    </header>
+    <main>
+        <section class="md:h-screen md:mt-8 sm:w-full md:w-5/6 lg:w-4/6 mx-auto flex flex-col">
+            <nav>
+                <ul class="flex flex-col items-start gap-2 px-8 py-4 md:flex-row justify-end">
+                    <li><a class="hover:underline" href="./index.html">Maiúsculas e Minúsculas</a></li>
+                    <li><a class="hover:underline" href="./calculadora-imc.html">Calculadora de IMC</a></li>
+                </ul>
+            </nav>
+            <section class="container-top p-8 shadow-md flex gap-4 justify-between flex-wrap md:flex-nowrap bg-white">
+                <section class="container-top-left p-4 flex items-center w-full md:w-2/5">
+                    <fieldset id="form-imc" class="text-center w-full">
+                        <legend class="text-xl text-center mb-4 font-normal">Calculadora de IMC</legend>
+                        <!-- <label for="txtHeight" class="hide-text">Altura</label> -->
+                        <input class="inputs-imc" type="number" id="txtHeight" placeholder="Digite sua altura" autofocus>
+                        <!-- <label for="txtWeight" class="hide-text">Peso</label> -->
+                        <input class="inputs-imc" type="number" id="txtWeight" placeholder="Digite seu peso">
+                        <div class="flex gap-2" id="buttons">
+                            <button class="buttons-imc calculateButton" id="calculateButton">Calcular</button>
+                            <button class="buttons-imc bg-neutral-200 clearButton" id="clearButton">Limpar</button>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="container-top-right p-4 w-full md:w-3/5 bg-purple-300">
+                    <table class="w-full divide-y divide-gray-400">
+                        <thead class="text-left">
+                            <tr>
+                                <th class="py-1 px-2">IMC</th>
+                                <th class="py-1 px-2">Classificação</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-400">
+                            <tr>
+                                <td class="py-1 px-2">Menor que 18,50</td>
+                                <td class="py-1 px-2">Abaixo do Peso</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 px-2">Entre 18,50 e 24,99</td>
+                                <td class="py-1 px-2">Normal</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 px-2">Entre 25,00 e 29,99</td>
+                                <td class="py-1 px-2">Sobrepeso</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 px-2">Entre 30,00 e 34,99</td>
+                                <td class="py-1 px-2">Obesidade grau I</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 px-2">Entre 35,00 e 39,99</td>
+                                <td class="py-1 px-2">Obesidade grau II</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 px-2">Maior que 40,00</td>
+                                <td class="py-1 px-2">Obesidade grau III</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section class="containerBottom order-first md:order-last">
+                <section class="resultImc w-full h-16 text-4xl text-white font-normal bg-green-700/60 text-green border border-gray-400 flex hidden justify-center items-center md:mt-2 shadow-md">
+                </section>
+                <section class="otherMsg w-full h-16 bg-red-900/80 flex hidden justify-center items-center font-normal md:mt-2 text-white text-lg shadow-md">
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="w-full flex justify-center items-center p-8 border border-t-gray-300">
+        <p>Desenvolvido por <strong>Raul Diamantino</strong> - 2022</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

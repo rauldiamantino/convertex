@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Convertext</title>
+</head>
+
+<body class="font-light bg-gray-100">
+    <header class="bg-neutral-900 w-full sticky top-0">
+        <p class="text-white text-center p-2 text-sm md:text-base">Ferramentas gratuitas para conversões de textos, calculadoras, e muito mais... Aproveite e compartilhe!</p>
+    </header>
+    <main>
+        <section class="md:h-screen md:mt-8">
+            <nav class="w-full md:w-5/6 lg:w-4/6 mx-auto">
+                <ul class="flex flex-col items-start gap-2 px-8 py-4 md:flex-row md:justify-end">
+                    <li><a class="hover:underline" href="./index.html">Maiúsculas e Minúsculas</a></li>
+                    <li><a class="hover:underline" href="./calculadora-imc.html">Calculadora de IMC</a></li>
+                </ul>
+            </nav>
+            <section class="h-screen md:h-min w-full md:w-5/6 lg:w-4/6 mx-auto p-8 shadow-md bg-white">
+                <h1 class="text-xl mb-6 font-normal">Conversão de Maiúsculas e Minúsculas</h1>
+                <textarea name="input-text" id="input-text" cols="30" rows="10" placeholder="Digite ou cole o texto" autofocus class="w-full p-8 border border-neutral-500"></textarea>
+                <div class="flex gap-2 flex-wrap justify-start">
+                    <button class="buttons-home upper">MAIÚSCULAS</button>
+                    <button class="buttons-home lower">minúsculas</button>
+                    <button class="buttons-home first-upper">Primeira Letra</button>
+                    <button class="buttons-home bg-neutral-200 clear">Limpar</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="w-full flex justify-center items-center p-8 border border-t-gray-300">
+        <p>Desenvolvido por <strong>Raul Diamantino</strong> - 2022</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

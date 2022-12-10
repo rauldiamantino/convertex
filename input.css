@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+     .buttons-home {
+          @apply text-black border font-normal border-neutral-500 hover:border-black transition duration-200 px-4 py-1;
+     }
+     .inputs-imc {
+          @apply text-lg font-normal bg-slate-50 py-3 px-6 w-full mb-3 border border-neutral-500;
+     }
+
+     .buttons-imc {
+          @apply p-1 border border-neutral-500 w-1/2 hover:border-black transition duration-200;
+     }
+
+     .imcRating {
+          @apply text-white bg-color-imc-rating;
+     }
+}
